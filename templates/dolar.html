@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<section class="articles">
+            <div class="column is-8 is-offset-2">
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+
+                        <div class="content article-body">
+                            <ul>
+							{% for elemento in context %}
+								{% for e in elemento %}
+									<li>{{elemento[e]['nombre']}}:</li>
+										<ul>
+											<li>Compra: {{elemento[e]['compra']}}</li>
+											<li>Venta: {{elemento[e]['venta']}}</li>
+											<li>Varación: {{elemento[e]['variacion']}}</li>
+										</ul>
+								{% endfor %}
+							{% endfor %}
+							</ul>
+                    </div>
+        </div>
+
+{%endblock%}

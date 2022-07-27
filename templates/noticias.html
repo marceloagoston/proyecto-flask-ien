@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+
+ {% block contenido %}
+
+
+<!-- START ARTICLE FEED -->
+<section class="articles">
+            <div class="column is-8 is-offset-2">
+                {% for noticia in contenido %}
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content has-text-centered">
+                                <p class="title article-title">{{noticia.titulo}}</p>
+                                <div class="tags has-addons level-item">
+                                    <span class="tag is-rounded is-info">{{noticia.autor}}</span>
+                                    <span class="tag is-rounded">{{noticia.fecha}}</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="media-center">
+                                <img src="{{noticia.imagen}}" class="author-image" alt="Placeholder image">
+                            </div>
+                        <div class="content article-body">
+                            <p>
+                                {{noticia.texto}}
+                            </p>
+                        </div>
+                    </div>
+        </div>
+        <!-- END ARTICLE -->
+        {% endfor %}
+                
+
+</section>
+ {% endblock %}
