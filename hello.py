@@ -24,7 +24,7 @@ def about():
 
     lista_links = ['www.google.com','www.duckduckgo.com','www.python.org','www.mercadolibre.com.ar']
 
-    numero = random.randint(1,6)
+    numero = random.randint(1,10)
 
     return render_template(template_name, links=lista_links, numero=numero)
 
