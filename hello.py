@@ -85,6 +85,13 @@ def noticias():
             'fecha':'04 de Enero, 2021',
             'imagen':'https://www.diarionorte.com/content/bucket/9/294729w750h500c.jpg.webp',
             'autor':'Mariela Quintana'
+        },
+        {
+            'titulo':'El inquietante thriller que es un furor en Netflix y no para de sumar reproducciones',
+            'texto': 'Se trata de una serie de seis episodios que cuenta cómo se lleva a cabo el rescate de un asesino en serie de una cárcel psiquiátrica durante la noche del 24 de diciembre.',
+            'fecha':'22 de Julio, 2021',
+            'imagen':'https://www.diarionorte.com/content/bucket/9/294729w750h500c.jpg.webp',
+            'autor':'Victor Fernandez'
         }
     ]
 
