@@ -13,7 +13,7 @@ def test():
 @app.route("/")
 def inicio():
 
-    variable1 = 4
+    variable1 = 46
 
     return render_template('home.html')
 
